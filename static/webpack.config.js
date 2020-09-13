@@ -1,11 +1,12 @@
   
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path=require('path')
+const webpack=require('webpack')
    
 
   module.exports={
       mode:'development',
-      entry:'./static/JS/index.js',
+      entry:'./JS/index.js',
       devServer:{
           contentBase:'./dist'
       },
@@ -20,12 +21,29 @@ const path=require('path')
                 presets: ['@babel/preset-env']
               }
             }
+          },
+          { test: /\.css$/, 
+            use: [ 'style-loader', 'css-loader' ]
+          },
+          {
+            test: /\.s[ac]ss$/i,
+            use:[
+              // Creates `style` nodes from JS strings
+              'style-loader',
+              // Translates CSS into CommonJS
+              'css-loader',
+              // Compiles Sass to CSS
+              'sass-loader',
+            ]
           }
         ]
       },
       plugins:[
         new HtmlWebpackPlugin({
             title:'Development',
+        }),
+        new HtmlWebpackPlugin({
+          template: './public/index.html'
         })
       ],
 
