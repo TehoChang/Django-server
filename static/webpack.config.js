@@ -43,7 +43,8 @@ const webpack=require('webpack')
             title:'Development',
         }),
         new HtmlWebpackPlugin({
-          template: './public/index.html'
+          template: './public/index.html'  
+          // 就靠這段，react跟index.html連結了嗎？ 
         })
       ],
 
