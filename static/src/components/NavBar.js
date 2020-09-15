@@ -1,7 +1,7 @@
 import React from 'react'
 import { Menu } from 'antd';
 import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
-import '../styles/NavBar.css'
+import '../styles/NavBar.scss'
 // import '~antd/dist/antd.css';
 
 
