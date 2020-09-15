@@ -8,7 +8,7 @@ const { Header, Content, Footer } = Layout;
 const Home = function () {
     return (
 
-       <div>this is Home</div>
+       <div>this is Homeeeeeee</div>
 
     )
 }
