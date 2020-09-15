@@ -1,1 +1,13 @@
 @import '~antd/dist/antd.css';
+
+
+.menu-item{
+    font-size: 28px;
+}
+.ant-menu {
+    text-align: center;
+}
+.ant-menu-horizontal{
+    line-height: 150px;
+}
+
