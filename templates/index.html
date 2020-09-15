@@ -11,7 +11,8 @@
     
     <h1>This is my hello</h1>
     {% load static %}
-    <script type="text/javascript" src="{% static '/JS/index.js' %}"></script>
+    <div id="root"></div>
+    <script type="text/javascript" src="{% static '/dist/bundle.js' %}"></script>
     <!-- 傳統js，<script>標籤會放在最下面 -->
 </body>
 </html>

@@ -8,5 +8,5 @@ def hello_world(request):
     })
 
 #當url匹配時接收到HTTP request
-def my_hello(request):
-    return render(request,'my_hello.html')
+def index(request):
+    return render(request,'index.html')

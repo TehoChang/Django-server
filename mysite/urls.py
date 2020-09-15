@@ -16,13 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include, url
-from app1.views import hello_world, my_hello
+from app1.views import hello_world, index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     #url(r'^admin/', include(admin.site.urls)),
     path('hello/',hello_world),
-    path('myhello/',my_hello)
+    path('app1/',index)
     #url(r'^hello/$', hello_world),
     # path('', views.index, name='index'),
    
